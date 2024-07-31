@@ -1853,4 +1853,26 @@ artists_list = [ 'Kordhell', 'DVRST', 'MC ORSEN', 'Kute', 'Green Orxnge', 'PLAYA
         
 # bottom_drawer(6)
 
-INDP15PR_DRMVOYG
+# INDP15PR_DRMVOYG
+
+
+
+# image = [ ' _ _ _ ' ] + \
+#         [ '|  _  |' ] + \
+#         [ '| |+| |']  + \
+#         [ '|_ _ _|'] 
+
+# print('\n'.join(image))
+
+import platform
+import sys
+
+info = 'OS info is \n{}\n\nPython version is {} {}'.format(
+    platform.uname(),
+    sys.version,
+    platform.architecture(),
+)
+print(info)
+
+with open('os_info.txt', 'w', encoding='utf8') as file:
+    file.write(info)
