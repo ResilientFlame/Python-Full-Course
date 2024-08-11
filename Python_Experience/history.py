@@ -1864,15 +1864,126 @@ artists_list = [ 'Kordhell', 'DVRST', 'MC ORSEN', 'Kute', 'Green Orxnge', 'PLAYA
 
 # print('\n'.join(image))
 
-import platform
-import sys
+# import platform
+# import sys
 
-info = 'OS info is \n{}\n\nPython version is {} {}'.format(
-    platform.uname(),
-    sys.version,
-    platform.architecture(),
-)
-print(info)
+# info = 'OS info is \n{}\n\nPython version is {} {}'.format(
+#     platform.uname(),
+#     sys.version,
+#     platform.architecture(),
+# )
+# print(info)
 
-with open('os_info.txt', 'w', encoding='utf8') as file:
-    file.write(info)
+# with open('os_info.txt', 'w', encoding='utf8') as file:
+#     file.write(info)
+
+
+# def boxes(n):
+#     result = [ ' _ ', '|_|' ]
+#     for i in range(1, n):
+#         result = [ ' _' + result[0] ] + \
+#                  [ '|  ' + element[1:] for element in result[1:] ] + \
+#                  [ '|_' + result[-1] ]
+#     print('\n'.join(result))
+
+# boxes(3)
+
+# def boxes(n):
+#     result = [ ' _ ', '|_|' ]
+#     for i in range(1, n):
+#         result = [ ' _' + result[0] ] + \
+#                  [ '|  ' + element[1:] for element in result[1:] ] + \
+#                  [ '| ' + element for element in result[1:-1] ] + \
+#                  [ '|_' + result[-1] ]
+#     return '\n'.join(result)
+
+# for index in range(1, 5):
+#     print(boxes(index))
+#     print('_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _')
+
+# def level(currents):
+#     return [ ' _' + currents[0] ] + \
+#            [ '|  ' + fragment[1:] for fragment in currents[1:] ] + \
+#            [ '| ' + fragment for fragment in currents[1:-1] ] + \
+#            [ '|_' + currents[-1] ]
+
+# def boxes(n):
+#     result = [ ' _ ', '|_|' ]
+#     for i in range(1, n):
+#         result = level(result)
+#     return '\n'.join(result)
+
+# print(boxes(3))
+
+# array = [ 
+#     '|',
+#     '|',
+#     '|',
+#     '|',
+#     '|',
+#     '|',
+#     '|',
+# ]
+
+# array = [ '{' + element for element in array ]
+
+# print(array)
+
+# def counter(number):
+#     count = 0
+#     while number:
+#         number //= 10
+#         count += 1
+#     return count
+
+# def changeNumber(number):
+#     if number // 10:
+#         count = counter(number)
+#         first_digit = number // 10 ** (count - 1)
+#         last_digit = number % 10
+#         between_digits = (number % 10 ** (count - 1) // 10) * 10
+#         return last_digit * 10 ** (count - 1) + between_digits + first_digit
+#     return 0
+
+# print(changeNumber(38))
+
+# books_ID = [ 30, 40, 50, -1, -1 ]
+# IDs_length = len(books_ID)
+
+# for Id in [ el for el in books_ID ]:
+#     if Id > 0:
+#         books_ID.append(Id)
+
+# books_ID = books_ID[IDs_length:]
+
+# for _ in range(10):
+#     book_ID = int(input('Введите Id книги которую купили: '))
+#     if book_ID > 0:
+#         books_ID.append(book_ID)
+
+
+
+# print('Книги в библеотеке:', books_ID)
+
+# monsters_count = int(input('Введите кол-во монстров: '))
+# monsters_damage = []
+# mage_index = int(input('Введите номер мага в списке: '))
+
+# for i in range(monsters_count):
+#     print('Введите урон', i + 1, '- го монстра: ', end = '')
+#     damage = int(input())
+#     monsters_damage.append(damage)
+
+# for index in range(monsters_count):
+#     if index != mage_index - 1 and monsters_damage[index] < 100:
+#         monsters_damage[index] += monsters_damage[mage_index - 1]
+
+# print(monsters_damage)
+
+scores = [ 10, 15, 23, 44, 7 ]
+
+scores[1] += len(scores)
+scores.append(0)
+scores[2] += len(scores)
+
+print(scores)
