@@ -1980,10 +1980,173 @@ artists_list = [ 'Kordhell', 'DVRST', 'MC ORSEN', 'Kute', 'Green Orxnge', 'PLAYA
 
 # print(monsters_damage)
 
-scores = [ 10, 15, 23, 44, 7 ]
+# sorcerers = [ 'Nabara', 'Megumi', 'Itadori', 'Panda', 'Inumaki', 'Maki', 'Todo', 'Choso', 'Mahito', 'Geto', 'Sukuna', 'Gojo' ]
+# user_sorcerers = [ 'Gojo', 'Megumi', 'Itadori', 'Sukuna', 'Maki' ]
+# index = 0
 
-scores[1] += len(scores)
-scores.append(0)
-scores[2] += len(scores)
+# for sorcerer in user_sorcerers:
+#     idx = index
+#     while idx > 0:
+#         if sorcerers.index(sorcerer) < sorcerers.index(user_sorcerers[idx - 1]):
+#             user_sorcerers[idx] = user_sorcerers[idx - 1]
+#             user_sorcerers[idx - 1] = sorcerer
+#             idx -= 1
+#         else:
+#             break
+#     index += 1
 
-print(scores)
+# print(user_sorcerers)
+
+# numbers = [ 1, 4, 2, 9, 13, 7 ]
+
+# for index in range(1, len(numbers)):
+#     current = numbers[index]
+#     while index > 0:
+#         if current < numbers[index - 1]:
+#             numbers[index] = numbers[index - 1]
+#             numbers[index - 1] = current
+#             index -= 1
+#         else:
+#             break
+
+# print(numbers)
+
+# def insertion_sort(array):
+#     for index in range(1, len(array)):
+#         current = array[index]
+#         while index > 0:
+#             if current > array[index - 1]:
+#                 array[index] = array[index - 1]
+#                 array[index - 1] = current
+#                 index -= 1
+#             else:
+#                 break
+
+# array = [ 5, 3, 2, 3 ]
+# insertion_sort(array)
+
+# print(array)
+
+# langs = [ 'Python', 'Java', 'JS', 'SQL' ]
+# user_lang = input('После чего вставить: ')
+# i_lang = langs.index(user_lang)
+# langs.insert(i_lang + 1, 'C++')
+
+# print(langs)
+
+# array = [ 'Space FLight', 'Space FLight', 'Space FLight' ]
+
+# array.remove('Space FLight')
+
+# print(array)
+
+# animals = [ 'lion', 'kangoroo', 'elephant', 'monkey' ]
+
+# print('Список животных в мае 2023 года:', animals)
+# animals.insert(1, 'bear')
+# print('Список животных в июне 2-го 2023 года:', animals)
+# animals.remove('elephant')
+# print('Список животных в июне 4-го', animals)
+
+# month = [ 100000, 90000, 140000, 0, 150000, 0, 0, 0 ]
+
+# def counter(array, element):
+#     result = 0
+#     for el in array:
+#         if el == element: result += 1
+#     return result
+
+# for _ in range(counter(month, 0)):
+#     month.remove(0)
+# print(month)
+
+# try: ranks.index(user_char)
+# except ValueError:
+#     print('К сожалению такого персонажа в списке нету...')
+# else:
+#     print('Ваш персонаж в рейтинге занимает', ranks.index(user_char) + 1, 'место')
+
+# numbers = [ 100, 500, 50, 350, 10 ]
+
+# for curr in range(len(numbers)):
+#     for cmp in range(curr, len(numbers)):
+#         if numbers[curr] < numbers[cmp]:
+#             numbers[curr], numbers[cmp] = numbers[cmp], numbers[curr]
+
+# print(numbers)
+
+# pack = []
+# decode = []
+# bad_packs = 0
+# pack_amt = int(input('Кол-во пакетов: '))
+
+# for _ in range(pack_amt):
+#     for number in range(4):
+#         print(number + 1, 'бит:', end=' ')
+#         num = int(input())
+#         pack.append(num)
+#     if pack.count(-1) <= 1:
+#         decode.extend(pack)
+#     else:
+#         bad_packs += 1
+#     pack = []
+
+# print('Пакеты для декода:', decode)
+# print('Кол-во плохих пакетов:', bad_packs)
+
+# N = int(input('Кол-во участников: '))
+# members = []
+# num = 1
+
+# for _ in range(N // 3):
+#     members.append(list(range(num, num + 3)))
+#     num += 3
+
+# print(members)
+
+# print(list(range(1, 9)))
+
+# def sum(n1, n2):
+#     n1[1] += 2
+#     n2[1] += 2
+
+# array1 = list(range(1, 4))
+# array2 = list(range(4, 7))
+
+# sum(array1, array2)
+
+# print(array1, array2)
+
+# def selection_sort(array):
+#     for index_1 in range(len(array)):
+#         for index_2 in range(index_1 + 1, len(array)):
+#             if array[index_1] > array[index_2]:
+#                 array[index_1], array[index_2] = array[index_2], array[index_1]
+
+# unsorted_numbers = [ 8, 7, 6, 10, 16, 80 ]
+# selection_sort(unsorted_numbers)
+
+# print(unsorted_numbers)
+
+# a = []
+# b = []
+# c = []
+
+# print('Заполните основной список цифрами', end='\n')
+# list_len = int(input('Кол-во цифр внутри списка: '))
+# for _ in range(list_len):
+#     a.append(int(input('Введите число: ')))
+
+# print('Заполните побочный список `b` цифрами', end='\n')
+# list_len = int(input('Кол-во цифр внутри списка: '))
+# for _ in range(list_len):
+#     b.append(int(input('Введите число: ')))
+
+# print('Заполните побочный список `c` цифрами', end='\n')
+# list_len = int(input('Кол-во цифр внутри списка: '))
+# for _ in range(list_len):
+#     c.append(int(input('Введите число: ')))
+
+# print('Основной список:', a)
+# print('Побочный список `b`:', b)
+# print('Побочный список `с`', c)
