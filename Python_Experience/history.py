@@ -2150,3 +2150,157 @@ artists_list = [ 'Kordhell', 'DVRST', 'MC ORSEN', 'Kute', 'Green Orxnge', 'PLAYA
 # print('Основной список:', a)
 # print('Побочный список `b`:', b)
 # print('Побочный список `с`', c)
+
+# people_count = int(input('Кол-во людей в кругу: '))
+# people = list(range(1, people_count + 1))
+# idx_delete = int(input('Какое число в считалке? '))
+# leave_n = 0
+
+# while len(people) > 1:
+#     people_startdown = people[leave_n:]
+#     people_startdown.extend(people[:leave_n])
+#     leave_n = idx_delete % len(people_startdown) - 1
+#     people.remove(people_startdown[leave_n])
+#     print(people)
+
+# list_1 = [ 2, 2, 4, 5, 10, 14 ]
+# list_2 = [ 1, 2, 3, 4, 5, 2 ]
+
+# def merge_sorted_lists(list_1, list_2):
+#     list_1.extend(list_2)
+#     idx = 0
+#     while idx < len(list_1):
+#         curr = list_1[idx]
+#         if list_1.count(curr) > 1:
+#             list_1.remove(curr)
+#         else:
+#             idx += 1
+
+# merge_sorted_lists(list_1, list_2)
+
+# print(list_1)
+
+# d09m05y16_tour = []
+# kyoto_tech = [ 'Todo', 'Mechamaru', 'Ani', 'May', 'Kendjaku' ]
+# tokyo_tech = [ 'Itadori', 'Panda', 'Inumaki', 'Maki', 'Nabara' ]
+
+# d09m05y16_tour.extend(kyoto_tech)
+# d09m05y16_tour.extend(tokyo_tech)
+
+# print(d09m05y16_tour)
+
+# characters = []
+
+# search_ch = input('Имя героя: ')
+
+# while search_ch != '0':
+#     if search_ch in characters:
+#         print('Этого персонажа есть в списке...')
+#     else:
+#         print('Этого персонажа нету в списке...')
+#         pl = int(input('нужно его добавить: '))
+#         if pl > len(characters) - 1:
+#             characters.append(search_ch)
+#         else:
+#             characters.insert(pl - 1, search_ch)
+#     print('Текущий список героев:', characters)
+#     search_ch = input('Имя героя: ')
+
+# chars = list(range(1, 6))
+# each_count = int(input('Выбывает каждый: '))
+# print('Значит выбывает каждый ' + str(each_count) + '-ой.')
+# start = 0
+
+# while len(chars) > 1:
+#     count_arr = chars[start:]
+#     count_arr.extend(chars[:start])
+#     start = chars.index(count_arr[each_count % len(chars) - 1])
+#     chars.remove(chars[start])
+#     print(chars)
+
+# def get_higher_price(price, percent):
+#     return price * (100 + percent) / 100
+
+# prices_now = [ 1.09, 23.56, 57.84, 4.56, 6.78 ]
+# first_percent = int(input('Повышение цены на первый год: '))
+# second_percent = int(input('Повышение цены на второй год: '))
+# print(prices_now)
+# prices_first = [ get_higher_price(i_price, first_percent) for i_price in prices_now ]
+# print(prices_first)
+
+# favor_songs = [ 'Love Nwantiti', 'I Wanna Be yours', 'After Dark', 'The other side Of paradise', 'Dead to me', 'Havana', 'Death bed', 'Under the influence', 'Renegade', 'Without me', 'Industry Baby', 'Wannabe', 'SDP interlude', 'Me And the Devil' ]
+# leave_number = int(input('Какое число в считалке? '))
+# count_from = 0
+
+# while len(favor_songs) > 1:
+#     count_array = favor_songs[count_from:]
+#     count_array.extend(favor_songs[:count_from])
+#     count_from = favor_songs.index(count_array[leave_number % len(count_array) - 1])
+#     favor_songs.remove(favor_songs[count_from])
+#     print(favor_songs)
+
+# squares_odds = [ x ** 2 if x % 2 else x ** 3 for x in range(10)  ]
+
+# print(squares_odds)
+
+# import random
+
+# fst_squad = [ random.randint(50, 80) for _ in range(10) ]
+
+# print(fst_squad)
+
+# creatures = [ 'Mudzan', 'Sukuna', 'Void', 'Meliodas', 'Zeldris', 'Ruk', 'Ryo Asuka' ]
+# leave_idx = int(input('Число в считалке: '))
+# leave_num = 0
+
+# while len(creatures) > 1:
+#     leave_num += leave_idx - 1
+#     leave_num %= len(creatures)
+#     creatures.remove(creatures[leave_num])
+#     print(creatures)
+
+# nums = [ x for x in range(10, 101, 10) ]
+# new_nums = nums[:]
+
+# nums[0] = 0
+
+# print(new_nums)
+# print(nums)
+
+# original_prices = [-12, 3, 5, -2, 1]
+
+# new_prices = original_prices[:]
+
+# for i in range(len(original_prices)):
+
+#     if new_prices[i] < 0:
+
+#         new_prices[i] = 0
+
+# print("Мы потеряли: ",  sum(original_prices) - sum(new_prices))
+
+# nums = [48, -10, 9, 38, 17, 50, -5, 43, 46, 12]
+
+# print(nums[:5])
+# print(nums[:-2])
+# print(nums[1::2])
+# print(nums[::2])
+# print(nums[::-1])
+# print(nums[::-2])
+# import random
+
+# a = random.randint(1, 5)
+# b = random.randint(5, 9)
+
+# numbers = list(range(1, 15))
+
+# numbers = [ numbers[idx] for idx in range(len(numbers)) if idx < a or idx > b ]
+
+# print(numbers)
+
+word = input('Введите слово: ')
+
+part1 = word[:len(word) // 2]
+part2 = word[len(word) // 2:]
+
+print(''.join(part1[::-1]) + ''.join(part2[::-1]))
