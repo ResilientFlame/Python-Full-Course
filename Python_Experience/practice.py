@@ -370,4 +370,13 @@
 
 # print(odds(14))
 
-print('567' * 5)
+# text = 'harmful products for health'
+# lastIndex = text.index('h')
+
+# while True:
+#     try:
+#         lastIndex = text.index('h', lastIndex + 1)
+#     except ValueError:
+#         break
+
+# print(text[1:lastIndex][::-1])
